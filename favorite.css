@@ -1,5 +1,12 @@
 h1 {
     color: gray;
     text-align: center;
-    
   }
+body {
+  background-color: orange;
+}
+#uber_style {
+  background:gray;
+  text-align:center;
+  color: orange;
+}

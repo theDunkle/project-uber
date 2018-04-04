@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+</head>
+<body>
+<script type='text/javascript'>
+function outer(){
+  var a = "I'm a string!"
+  var b = {name: "Gary",age: '35'}
+
+  console.log("===Outer (before)===",a,b)
+
+  function inner(c,d){
+
+    c = a;
+    d = b;
+    c += "!!!!!"
+    d.age = '21';
+
+    console.log("===Inner (before)===",c,d)
+
+    c = "Me too!";
+    d = {name:"Barry",age: 25};
+
+    console.log("===Inner (after)===",c,d)
+  }
+  inner(a,b);
+
+  console.log("===Outer (after)===",a,b)
+}
+
+outer();
+</script>
+</body>
+</html>
